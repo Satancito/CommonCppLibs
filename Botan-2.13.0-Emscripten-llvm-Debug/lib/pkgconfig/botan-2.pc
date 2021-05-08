@@ -1,0 +1,13 @@
+prefix=/Temp/Botan/dist/Botan-2.12.1-Emscripten-llvm-Debug
+exec_prefix=${prefix}
+libdir=/Temp/Botan/dist/Botan-2.12.1-Emscripten-llvm-Debug/lib
+includedir=${prefix}/include/botan-2
+
+Name: Botan
+Description: Crypto and TLS for C++11
+Version: 2.12.1
+
+Libs: -L${libdir} -lbotan-2 
+Libs.private: 
+Cflags: -I${includedir}
+
